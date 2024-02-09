@@ -1,335 +1,277 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Writings - Dev</title>
-    <link rel="stylesheet" href="./output.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Recursive&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body class="bg-slate-900">
-    <!-- Navbar -->
-    <div class="container-fluid mx-28 pt-16">
-      <nav class="flex justify-between font-extralight text-white font-poppins">
-        <h1 class="text-xl">writings.dev</h1>
-        <ul class="flex gap-4 text-md font-poppins">
-          <li>categories</li>
-          <li>about</li>
-          <li>articles</li>
-        </ul>
-      </nav>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Writings - Dev</title>
+		<link rel="stylesheet" href="./output.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Recursive&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body class="no-scrollbar bg-[#232830]">
+		<!-- Navbar -->
+		<div class="container-fluid mx-28 pt-14">
+			<nav class="navbar">
+				<h1 class="text-xl">writings.dev</h1>
+				<ul class="text-md flex gap-4 font-poppins">
+					<li>categories</li>
+					<li>about</li>
+					<li>articles</li>
+				</ul>
+			</nav>
+		</div>
 
-    <!-- Landing Page -->
-    <div class="container-fluid mx-auto">
-      <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex mx-auto w-fit mb-6">
-            <img src="/image/Logo.png" alt="" />
-          </div>
-          <div class="flex flex-col text-center w-full">
-            <h2
-              class="text-5xl text-[#FF7575] font-medium font-recursive italic leading-[70px]"
-            >
-              Writing for Developers
-            </h2>
-            <h1 class="text-xl font-normal text-white leading-[43px]">
-              Curated collection of articles for busy developers
-            </h1>
-          </div>
-        </div>
-      </section>
+		<!-- Landing Page -->
+		<div class="container-fluid mx-auto">
+			<section class="text-gray-600">
+				<div class="container mx-auto px-5 py-24">
+					<div class="mx-auto mb-6 flex w-fit">
+						<img src="/image/Logo.png" alt="" />
+					</div>
+					<div class="flex w-full flex-col text-center">
+						<h2
+							class="font-recursive text-5xl font-medium italic leading-[70px] text-[#FF7575]"
+						>
+							Writing for Developers
+						</h2>
+						<h1 class="text-xl font-normal leading-[43px] text-white">
+							Curated collection of articles for busy developers
+						</h1>
+					</div>
+				</div>
+			</section>
 
-      <hr />
-      <!-- Category Listing -->
-      <section>
-        <div class="container p-2">
-          <ul class="flex justify-center text-gray-400 gap-2 font-recursive">
-            <button>
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_31_323)">
-                  <path
-                    d="M6 6H0V0H6V6ZM15 0H9V6H15V0ZM24 0H18V6H24V0ZM6 9H0V15H6V9ZM15 9H9V15H15V9ZM24 9H18V15H24V9ZM6 18H0V24H6V18ZM15 18H9V24H15V18ZM24 18H18V24H24V18Z"
-                    fill="#909090"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_31_323">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-            <button class="mr-4">
-              <svg
-                width="16"
-                height="16"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <g clip-path="url(#clip0_31_325)">
-                  <path
-                    d="M0 4.36364H24V0H0V4.36364ZM0 14.1818H24V9.81818H0V14.1818ZM0 24H24V19.6364H0V25.0909V24Z"
-                    fill="#909090"
-                  />
-                </g>
-                <defs>
-                  <clipPath id="clip0_31_325">
-                    <rect width="24" height="24" fill="white" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-            <ul class="flex justify-center text-gray-400 gap-3 font-recursive">
-              <li>Javascript</li>
-              <li>DevOps</li>
-              <li>Cloud</li>
-              <li>Terraform</li>
-              <li>Architecture</li>
-              <li>Scalability</li>
-              <li class="should-blur">Explainers</li>
-            </ul>
-          </ul>
-        </div>
-      </section>
-    </div>
+			<hr />
+			<!-- Category Listing -->
+			<section>
+				<div class="container p-2">
+					<ul class="flex justify-center gap-2 font-recursive text-gray-400">
+						<button>
+							<img src="/image/Grid Icon.svg" alt="" />
+						</button>
+						<button class="mr-4">
+							<img src="/image/List Icon.svg" alt="" />
+						</button>
+						<ul
+							class="flex w-auto justify-center gap-6 font-recursive text-gray-400"
+						>
+							<li>Javascript</li>
+							<li>DevOps</li>
+							<li>Cloud</li>
+							<li>Terraform</li>
+							<li>Architecture</li>
+							<li>Scalability</li>
+							<li class="should-blur">Explainers</li>
+						</ul>
+					</ul>
+				</div>
+			</section>
+		</div>
 
-    <!-- CONTENT -->
-    <div class="container mx-auto mt-20">
-      <!-- Card -->
-      <div class="grid grid-cols-3 gap-3">
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2.png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!-- Card 2 -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (7).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Python for the Absolute beginners
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              Python is the most popular programming language out there and it is used for so many different industries.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (2).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (8).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Docker from Zero to Hero
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              Learn what is Docker and  how Docker is used in the whole software development process.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-          <!--  -->
-          <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (1).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (4).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (3).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (6).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        <!--  -->
-        <div
-          class="rounded-2xl overflow-hidden shadow-lg w-[24rem] h-[27rem] bg-white"
-        >
-          <img
-            src="/image/image 2 (5).png"
-            alt=""
-            class="block mx-auto w-[21rem] h-[10rem] mt-6"
-          />
-          <div class="block mx-auto w-[21rem] font-poppins mt-6 text-xl">
-            <h1 class="font-bold text-balance">
-              Build continuous integration pipelines with GitHub Actions
-            </h1>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-4 text-sm">
-            <p>
-              GitHub actions provide a really powerful way to integrate
-              continuous integration and delivery into your applications.
-            </p>
-          </div>
-          <div class="block mx-auto w-[21rem] font-poppins mt-10 text-md">
-            June 24, 2022 * DevOps
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </body>
+		<!-- CONTENT -->
+		<div class="container mx-auto mt-20">
+			<!-- Card -->
+			<div class="grid grid-cols-3 gap-10">
+				<div class="card">
+					<img src="/image/image 2.png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!-- Card 2 -->
+				<div class="card">
+					<img src="/image/image 2 (7).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">Python for the Absolute beginners</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							Python is the most popular programming language out there and it
+							is used for so many different industries.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (2).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (8).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">Docker from Zero to Hero</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							Learn what is Docker and how Docker is used in the whole software
+							development process.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (1).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (4).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (3).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (6).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+				<!--  -->
+				<div class="card">
+					<img src="/image/image 2 (5).png" alt="" class="image-thing" />
+					<div class="card-title">
+						<h1 class="font-bold">
+							Build continuous integration pipelines with GitHub Actions
+						</h1>
+					</div>
+					<div class="card-content">
+						<p>
+							GitHub actions provide a really powerful way to integrate
+							continuous integration and delivery into your applications.
+						</p>
+					</div>
+					<div class="text-md mx-auto mb-4 mt-10 block w-[21rem] font-poppins">
+						June 24, 2022 * DevOps
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Pagination -->
+		<div class="container mx-auto">
+			<ul
+				class="my-20 flex w-auto justify-center gap-6 font-recursive italic text-gray-400"
+			>
+				<li>Previous</li>
+				<li>1</li>
+				<li class="text-[#FF7575]">2</li>
+				<li>3</li>
+				<li>4</li>
+				<li>5</li>
+				<li>Next</li>
+			</ul>
+		</div>
+
+		<hr />
+
+		<!-- Footer -->
+		<div class="container mx-auto">
+			<ul class="my-20 flex font-recursive text-lg text-white">
+				<li>writings.dev</li>
+				<button class="flex mx-4 w-18 justify-between gap-2 text-wrap rounded-md bg-blue-500 p-2 text-sm">by @kamrify</button>
+				<ul class="flex h-full flex-1 flex-col items-end">
+					<button
+						class="flex justify-between gap-2 text-wrap rounded-md bg-blue-500 p-2 text-sm"
+					>
+						<img src="/image/Vector.svg" alt="" />
+						<p>follow @writings.dev</p>
+					</button>
+				</ul>
+			</ul>
+		</div>
+	</body>
 </html>

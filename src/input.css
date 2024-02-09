@@ -1,12 +1,41 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 .should-blur {
-    --mask: linear-gradient(to right,
-            rgba(0, 0, 0, 1) 0, rgba(0, 0, 0, 1) 50%,
-            rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0) 0) 100% 50% / 100% 100% repeat-x;
-    -webkit-mask: var(--mask);
-    mask: var(--mask);
+	--mask: linear-gradient(
+			to right,
+			rgba(0, 0, 0, 1) 0,
+			rgba(0, 0, 0, 1) 50%,
+			rgba(0, 0, 0, 0) 100%,
+			rgba(0, 0, 0, 0) 0
+		)
+		100% 50% / 100% 100% repeat-x;
+	-webkit-mask: var(--mask);
+	mask: var(--mask);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+
+@layer components {
+	.card {
+		@apply flex h-auto w-auto flex-col rounded-2xl bg-white shadow-lg;
+	}
+	.card-title {
+		@apply mx-auto mt-6 flex w-[21rem] flex-1 font-poppins text-xl;
+	}
+	.card-content {
+		@apply flex items-stretch h-full mx-auto mt-4  w-[21rem] font-poppins text-sm;
+	}
+	.image-thing {
+		@apply mx-auto mt-6 block h-[10rem] w-[21rem];
+	}
+
+    /* Navbar */
+    .navbar {
+        @apply flex justify-between font-poppins font-extralight text-white;
+    }
 }
